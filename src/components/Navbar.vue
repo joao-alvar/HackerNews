@@ -5,13 +5,13 @@
       <router-link :to="{ path: '/' }" class="pure-menu-heading pure-menu-link">Home</router-link>
       <ul class="pure-menu-list">
         <li class="pure-menu-item">
-          <router-link :to="{ path: '/single' }" class="pure-menu-link">News</router-link>
+          <router-link :to="{ path: '/new' }" class="pure-menu-link">News</router-link>
         </li>
         <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Sports</a>
+          <router-link :to="{ path: '/show' }" href="#" class="pure-menu-link">Show</router-link>
         </li>
         <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">Finance</a>
+          <router-link :to="{ path: '/jobs' }" href="#" class="pure-menu-link">Jobs</router-link>
         </li>
       </ul>
     </div>

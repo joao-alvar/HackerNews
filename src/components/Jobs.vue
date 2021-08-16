@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Home Page</h2>
+        <h2>Jobs Page</h2>
               <Item v-for="story in stories" :key="story.data.id" :story="story"></Item>
     </div>
 </template>
@@ -10,7 +10,7 @@ import axios from 'axios'
 import Item from '@/components/Item.vue'
 
 export default {
-    name: "HomePage",
+    name: "Jobs",
     components: {
         "Item": Item
     } ,
@@ -22,7 +22,7 @@ export default {
     },
     created: function () {
         axios
-      .get("https://hacker-news.firebaseio.com/v0/topstories.json")
+      .get("https://hacker-news.firebaseio.com/v0/jobstories.json")
       .then(response => {
        let results = response.data.slice(0, 30)
        results.forEach(id => {

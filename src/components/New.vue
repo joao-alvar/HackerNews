@@ -10,7 +10,7 @@ import axios from 'axios'
 import Item from '@/components/Item.vue'
 
 export default {
-    name: "HomePage",
+    name: "New",
     components: {
         "Item": Item
     } ,
@@ -22,9 +22,9 @@ export default {
     },
     created: function () {
         axios
-      .get("https://hacker-news.firebaseio.com/v0/topstories.json")
+      .get("https://hacker-news.firebaseio.com/v0/newstories.json")
       .then(response => {
-       let results = response.data.slice(0, 30)
+       let results = response.data.slice(0, 10)
        results.forEach(id => {
            axios.get("https://hacker-news.firebaseio.com/v0/item/" + id + ".json")
             .then(response => {
