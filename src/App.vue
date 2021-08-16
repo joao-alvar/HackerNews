@@ -1,23 +1,35 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!-- <img src="./assets/logo.png"> -->
+    <FonteNoticia v-on:sourceChanged="sourceChanged"></FonteNoticia>
+   <NoticiaLista v-bind:source="source"></NoticiaLista> 
   </div>
 </template>
 
 <script>
+import FonteNoticia from './components/FonteNoticia'
+import NoticiaLista from './components/NoticiaLista'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    FonteNoticia,
+    NoticiaLista
+  },
+  data () {
+    return {
+      source: ""
+    }
+  },
+  methods: {
+    sourceChanged: function(source) {
+      this.source = source;
+    }
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ padding-top: 20px;
 }
 </style>
