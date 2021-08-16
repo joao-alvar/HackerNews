@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import FonteNoticia from "@/components/FonteNoticia";
+import HelloWorld from "@/components/HelloWorld";
 
 Vue.use(Router);
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "FonteNoticia",
-      component: FonteNoticia
+      name: "HelloWorld",
+      component: HelloWorld
     }
   ]
 });

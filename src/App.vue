@@ -1,19 +1,16 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <FonteNoticia v-on:sourceChanged="sourceChanged"></FonteNoticia>
-   <NoticiaLista v-bind:source="source"></NoticiaLista> 
+    <Navbar></Navbar>
   </div>
 </template>
 
 <script>
-import FonteNoticia from './components/FonteNoticia'
-import NoticiaLista from './components/NoticiaLista'
+import Navbar from "@/components/Navbar";
 export default {
   name: 'App',
   components: {
-    FonteNoticia,
-    NoticiaLista
+   Navbar
   },
   data () {
     return {
@@ -30,6 +27,5 @@ export default {
 
 <style>
 #app {
- padding-top: 20px;
 }
 </style>
