@@ -1,20 +1,16 @@
 <template>
-    <div class="fonte__noticia">
-        <div class="fonte__container">
-        <h4>Selecione a Fonte de Noticias</h4>
-        <select class="form-control" v-on:change="sourceChanged">
-            <option v-bind:key="source.id" v-for="source in sources">{{source.name}}</option>
-        </select>
-        <div v-for="source in sources" v-bind:key="source.id">
-            <h6>{{source.description}}</h6>
-            <a v-bind:href="source.url" class="btn btn-primary" target="_blank">Visitar {{source.name}}</a>
-        </div>
-        </div>
-    </div>
+      <div class="container">
+           <div class="searchbar">
+               <form @submit.prevent="fetchSearchNews">
+        <input type="text" placeholder="search..." v-model="searchword">
+      </form>
+           </div>
+      </div>
 </template>
 
 <script>
 export default {
+       name: "FonteNoticia",
     props: [
       'apiKey'
     ],
