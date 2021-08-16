@@ -1,16 +1,14 @@
+body,
+html {
+  min-width: 320px;
+}
+
 body {
   background-color: #f0f2fa;
   font-family: "PT Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial",
     sans-serif;
   color: #555f77;
   -webkit-font-smoothing: antialiased;
-}
-
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 @media (min-width: 768px) {
@@ -29,4 +27,8 @@ body {
   .container {
     width: 1170px;
   }
+}
+
+.section__title {
+  text-align: center;
 }

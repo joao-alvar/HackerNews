@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Jobs Page</h2>
+        <h2 class="section__title">Jobs</h2>
               <Item v-for="story in stories" :key="story.data.id" :story="story"></Item>
     </div>
 </template>
