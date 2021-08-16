@@ -2,10 +2,10 @@
     <div class="noticia__lista">
      <div class="pure-menu pure-menu-horizontal">
     <div class="container">
-      <a href="#" class="pure-menu-heading pure-menu-link">Home</a>
+      <router-link :to="{ path: '/' }" class="pure-menu-heading pure-menu-link">Home</router-link>
       <ul class="pure-menu-list">
         <li class="pure-menu-item">
-          <a href="#" class="pure-menu-link">News</a>
+          <router-link :to="{ path: '/single' }" class="pure-menu-link">News</router-link>
         </li>
         <li class="pure-menu-item">
           <a href="#" class="pure-menu-link">Sports</a>
