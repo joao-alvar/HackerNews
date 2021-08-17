@@ -1,21 +1,18 @@
-# news
+# HackerNews Clone
 
-> A Vue.js project
+> Um projeto Vue.js
 
-## Build Setup
+## Sobre o projeto
 
-``` bash
-# install dependencies
-npm install
+# Usando HackerNews API, Axios, Pure CSS 
 
-# serve with hot reload at localhost:8080
-npm run dev
+# É um site de notícias, onde os usuários podem ver notícias,
+ver a nota que aquela história obteve, o número de comentários, quando foi postado,
+autor da postagem e o link da matéria.
 
-# build for production with minification
-npm run build
+# Outras funcionalidades
+Ao clicar na posagem, o usuário é redirecionado para a página daquele artigo,
+e lá possui os comentários daquela postagem.
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# Deploy
+https://jornal-vue-app.netlify.app
