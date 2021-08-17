@@ -6,7 +6,7 @@
 
 # Usando HackerNews API, Axios, Pure CSS 
 
-# É um site de notícias, onde os usuários podem ver notícias,
+# É um site de notícias, onde os usuários podem ver postagens,
 ver a nota que aquela história obteve, o número de comentários, quando foi postado,
 autor da postagem e o link da matéria.
 
