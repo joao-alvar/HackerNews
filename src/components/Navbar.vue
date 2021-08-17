@@ -1,7 +1,6 @@
 <template>
     <div class="navbar__wrap">
      <div class="pure-menu pure-menu-horizontal">
-    <div class="container">
         <router-link :to="{ path: '/' }" class="pure-menu-heading"><h2>HackerNews</h2></router-link>
         <div id="burger" :class="{ 'active' : isBurgerActive }"
          @click.prevent="toggle">
@@ -27,7 +26,6 @@
           <router-link :to="{ path: '/jobs' }" href="#" class="pure-menu-link">Jobs</router-link>
         </li>
       </ul>
-    </div>
   </div>
     </div>
 </template>
