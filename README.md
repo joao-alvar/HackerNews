@@ -14,7 +14,7 @@ autor da postagem e o link da matéria.
 Ao clicar na posagem, o usuário é redirecionado para a página daquele artigo,
 e lá possui os comentários daquela postagem.
 
-# Provedor do API -
+# Provedor do API
 https://news.ycombinator.com/
 
 # Deploy
