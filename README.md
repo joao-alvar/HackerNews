@@ -11,7 +11,7 @@ ver a nota que aquela história obteve, o número de comentários, quando foi po
 autor da postagem e o link da matéria.
 
 # Outras funcionalidades
-Ao clicar na posagem, o usuário é redirecionado para a página daquele artigo,
+Ao clicar no título da postagem, o usuário é redirecionado para a página daquele artigo,
 e lá possui os comentários daquela postagem.
 
 # Provedor do API
