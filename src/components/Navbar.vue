@@ -39,7 +39,6 @@ export default {
     methods: {
             toggle() {
                 this.isBurgerActive = !this.isBurgerActive
-                console.log('is working like a fine champ')
             }
             }
 };
